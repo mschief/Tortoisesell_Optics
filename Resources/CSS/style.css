@@ -1,0 +1,271 @@
+/*General overall styling */
+body{
+  font-family: helvetica, sans-serif;
+  background-color: white;
+}
+
+header{
+  background-color: cadetblue;
+  padding: 1rem 0;
+}
+
+header, a, .title{
+  color: white;
+}
+
+header, main, footer, section{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+}
+
+main{
+  flex-wrap: wrap;
+}
+
+h1, h3{
+  text-transform: uppercase;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 1.5rem;
+  padding: 0 2rem;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+p, figcaption, span, a{
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1240px){
+  body{
+    font-size: 18px;
+    line-height: 1.4rem;
+  }
+
+  header, main, footer, section{
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1240px){
+  body{
+    font-size: 18px;
+    line-height: 1.4rem;
+  }
+
+  header, main, footer, section{
+    max-width: 100%;
+  }
+
+  h1{
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 1rem;
+  }
+
+  p, figcaption, span, a{
+    font-size: 0.75rem;
+  }
+}
+
+/* Header details */
+nav a{
+  padding-right: 2rem;
+}
+
+#mini{
+    display: none;
+  }
+
+@media only screen and (min-width: 1240px){
+  header{
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #mini{
+    display: block;
+  }
+
+  .full{
+    display: none;
+  }
+}
+
+/* banner styling */
+.banner{
+  display: flex;
+  background-image: url("../Images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1240px){
+  .banner{
+    height: 30rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #tagline{
+    margin: auto 0;
+/*    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;*/
+    background-color: white;
+    padding: 1.5rem 5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1240px){
+  .banner{
+    height: 22rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #tagline{
+    margin: 5rem 2rem;
+    background-color: white;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .banner{
+    height: 17rem;
+    background-position: 20%;
+    align-items: flex-end;
+  }
+
+  #tagline{
+    margin: 1rem 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0rem;
+    justify-content: center;
+  }
+}
+
+/* Shop details */
+  /* Icon section */
+
+figure{
+  display: flex;
+  width: 5rem;
+  padding-right: 6rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.icon img{
+  width: 5rem;
+  height: auto;
+  display: block;
+}
+
+#exam img{
+  width: 3.5rem;
+}
+
+figcaption{
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+
+  .icons{
+    height: 8rem;
+    padding: 3rem;
+  }
+
+  .shop{
+    justify-content: center;
+  }
+
+  .detail{
+    padding: 5%;
+    width: 35%;
+  }
+
+  .title{
+    padding: 0.5rem 1.25rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.title{
+  background-color: cadetblue;
+}
+
+@media only screen and (max-width: 600px){
+  main{
+    padding: 3.77rem;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  figure{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .title{
+    width:100%;
+  }
+
+}
+
+
+/* Footer details */
+footer{
+  background-color: Azure;
+}
+
+@media only screen and (min-width: 600px){
+  footer{
+    padding: 4rem;
+  }
+
+  footer .logo img{
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  footer{
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .logo span{
+    display: none;
+  }
+}
